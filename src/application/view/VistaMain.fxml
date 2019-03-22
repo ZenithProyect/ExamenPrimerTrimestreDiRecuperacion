@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane fx:id="root" stylesheets="@../../../bin/application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SuperControl">
+   <children>
+      <BorderPane prefHeight="501.0" prefWidth="601.0">
+         <center>
+            <VBox alignment="CENTER" prefHeight="373.0" prefWidth="601.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="imagen" fitHeight="191.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/redhead.png" />
+                     </image>
+                  </ImageView>
+                  <Label styleClass="titulo" stylesheets="@../../application.css" text="About me" textFill="#3ea4a1" />
+                  <Label styleClass="subtitulo" stylesheets="@../../application.css" text="Suzanne W." />
+                  <Label styleClass="subtitulocursiva" stylesheets="@../../application.css" text="Programmers can design" />
+               </children>
+            </VBox>
+         </center>
+         <left>
+            <Pane prefHeight="417.0" prefWidth="52.0" style="-fx-background-color: #3ea4a1;" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <Pane prefHeight="417.0" prefWidth="58.0" style="-fx-background-color: #716a69;" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane layoutX="-32.0" layoutY="459.0" />
+                  <JFXButton fx:id="btnAceptar" alignment="BOTTOM_RIGHT" layoutX="-34.0" layoutY="444.0" onAction="#sendStage" prefHeight="31.0" prefWidth="69.0" style="-fx-background-color: orange;" text="Open!" textFill="WHITE">
+                     <tooltip>
+                        <Tooltip text="Click here!!" />
+                     </tooltip>
+                  </JFXButton>
+               </children>
+            </Pane>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>
